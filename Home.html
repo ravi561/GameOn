@@ -1,0 +1,441 @@
+<!DOCTYPE html> <!-- The new doctype -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,intial-state=1">
+	<title>GameOn</title>
+	<!--<link rel="stylesheet" type="text/css" href="gameon_css1.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/home.css" />
+	<script src="js/home.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="js/jquery.cycle.all.js" type="text/javascript"></script>
+	<link rel='shortcut icon' href='images/favicon.ico' type='image/x-icon'/ >
+</head>
+<body>
+<body>
+<br>
+<nav class="navbar-fixed-top navbar-default navbar">
+<div class="row header btn-group product-action pull-right">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart" href="ShoppingCart.html">
+				</i>
+				
+				ADD TO CART<span class="glyphicon glyphicon-shopping-cart">
+				
+				</button>
+				</div>		
+  <div class="row menu">
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <a href="Index.html" class="navbar-brand"><img src="images/logo.png" style="margin-top:-40px;"class="img-responsive img-thumbnail" width="100" height="300"></a>
+        </div>
+		
+<div class="container">
+	<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">BUY</a></li>
+            <li><a href="Userlogin.html">SELL</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</nav>
+<div class="container" style="margin-top:120px;">
+  <div class="row">
+	<!-- Title -->
+  </div>
+  <div class="row">
+    <!-- Search Start -->
+    <div class="col-md-3">
+      <h4>Search By Category <a id="show-search-menu" href="#" style="float:right;margin-right:20px ;font-size:13px"><span class="fa fa-chevron-down hidden-lg hidden-md"></span></a></h4>
+      
+<div class="well hidden-xs hidden-sm" id="search-menu"> 
+  
+ <form class="form-inline">
+  <div class="form-group" style="margin-top:6px;margin-bottom:6px;">
+    <label for="exampleInputName2">Category:</label>
+    <select class="form-control" style="width:90%;">
+        <option>Sports</option>
+        <option>Fighting</option>
+		<option>Adventure</option>
+        <option>Shooter</option>
+		<option> Horror</option>
+      </select>
+  </div>
+  
+   <div class="form-group" style="margin-top:6px;margin-bottom:6px;">
+    <label for="exampleInputEmail2"> Search By Keywords:</label>
+    <input style="width:90%" class="form-control" id="exampleInputEmail2" placeholder="Looking for...">
+  </div>
+  
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+
+</div>
+  <!-- Search End -->
+      <div class="categories-menu row">
+        <h4>Categories  <a id="show-categories-menu" href="#" style="float:right;margin-right:20px;font-size:13px"><span class="fa fa-chevron-down hidden-lg hidden-md"></span></a></h4>        
+
+        <div id="categories-menu-content" class="hidden-xs hidden-sm">
+            <div class="col-md-12 col-sm-4  col-xs-12" style="border-bottom:1px solid #EFEFEF;padding-top:4px;padding-bottom:4px;">
+             Action
+            </div> 
+            <div class="col-md-12 col-sm-4  col-xs-12" style="border-bottom:1px solid #EFEFEF;padding-top:4px;padding-bottom:4px;">
+             Shooter 
+            </div> 
+            <div class="col-md-12 col-sm-4  col-xs-12" style="border-bottom:1px solid #EFEFEF;padding-top:4px;padding-bottom:4px;">
+             Fighting 
+            </div> 
+            <div class="col-md-12 col-sm-4  col-xs-12" style="border-bottom:1px solid #EFEFEF;padding-top:4px;padding-bottom:4px;">
+              Action-adventure
+            </div>
+          <div class="col-md-12 col-sm-4  col-xs-12" style="border-bottom:1px solid #EFEFEF;padding-top:4px;padding-bottom:4px;">
+              Adventure
+            </div>
+           <div class="col-md-12 col-sm-4  col-xs-12" style="border-bottom:1px solid #EFEFEF;padding-top:4px;padding-bottom:4px;">
+             Sports
+            </div>
+            <div class="col-md-12 col-sm-4  col-xs-12" style="border-bottom:1px solid #EFEFEF;padding-top:4px;padding-bottom:4px;">
+              Music 
+            </div> 
+            <div class="col-md-12 col-sm-4  col-xs-12" style="border-bottom:1px solid #EFEFEF;padding-top:4px;padding-bottom:4px;">
+             Other Games
+            </div> 
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="row">
+       <!-- <div class=" col-sm-4 hidden-xs">
+          <div class="btn-group sort-group">
+									<button class="btn btn-default no-action">Sort by:</button>
+									<button class="btn btn-default btn-sort active" type="Submit" name="SortBy" value="1"><i class="fa fa-sort-numeric-asc"></i></button>
+									<button class="btn btn-default btn-sort " type="Submit" name="SortBy" value="2"><i class="fa fa-sort-numeric-desc"></i></button>
+								</div>
+        </div>-->
+		
+      
+		<div class=" col-sm-4">
+          <div class="btn-group sort-group pagination  top-pagination" style="margin-top:0px;margin-bottom:0px;">
+		
+		<button class="btn btn-default no-action disabled">«</button>
+		
+		<button class="btn btn-default btn-sort active" type="Submit" name="wp" value="1">1</button>
+		
+		<button class="btn btn-default btn-sort " type="Submit" name="wp" value="2">2</button>
+		
+		<button class="btn btn-default btn-sort " type="Submit" name="wp" value="3">3</button>
+		
+		<button class="btn btn-default btn-sort " type="Submit" name="wp" value="4">4</button>
+		
+		<button class="btn btn-default btn-sort" type="Submit" name="wp" value="2">»</button>
+		
+	</div>
+		</div>
+        <div class="col-sm-4  hidden-xs">
+          <div class="input-group pull-right">
+				<div class="input-group-addon">Result per Page</div>
+				<select class="form-control" style="width:60px">
+					<option>10</option>
+					<option>20</option>
+					<option>30</option>
+					<option>40</option>
+					<option>50</option>
+				</select>
+			</div>
+        </div>
+      </div>
+	<div class="row product-list">
+		<!-- Products Begin -->
+		<div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxwidth-555 tb-maxheight-555" alt="..."></button>
+	                <br><br><br>
+					<p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+		<div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	               <br><br><br> 
+				   <p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+      <div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	               <br><br><br> <p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11584123</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+		<div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	               <br><br><br> <p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+		<div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	                <br><br><br><p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+		<div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	                <br><br><br><p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+      <div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	               <br><br><br> <p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11584123</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+		<div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	             <br><br><br>   <p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Place Order
+				
+				</button>
+				</div>
+			</div>
+        </div>
+		<div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	                <br><br><br><p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+		<div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	                <br><br><br><p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+      <div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	               <br><br><br> <p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11584123</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+		<div class="col-sm-3 col-xs-6">
+        	<div class="product">
+            	<div class="product-info">
+					<button type="submit" name="imageSubmit" value="btn_was_clicked"><img src="images/motalcombat1.jpeg" class="img-responsive tb-center tb-maxheight-115" alt="..."></button>
+	                <br><br><br><p class="primary-font">
+						Mortal Kombat x
+	                </p>
+	                <p class="text-muted">11591347</p>
+					
+	            </div>
+				<div class="btn-group product-action">
+				
+ 				<button type="submit" name="Add to cart" class="btn btn-primary cart-btn"><i class="fa fa-shopping-cart">
+				</i>
+				
+				Add To Cart
+				
+				</button>
+				</div>
+			</div>
+        </div>
+		<!-- Products End -->
+	</div>
+	</div>
+    
+  </div>
+  
+</div>
+<div class="container-fluid navbar-default navbar-fixed">
+<center><h2><font color="red">Team Members</font></h2></center>
+	<div class="row"  style="margin-left:120px;>
+	<h3><font color="red"></h3>
+		<div class="col-sm-3">
+			<img src="images/rahul1.jpg" style="margin:10px"class="img-circle" width="100" height="100"><br>
+			<a class="btn btn-success" href="https://www.facebook.com/Rahullac?fref=ts">Contact Me</a>
+		</div>
+		<div class="col-sm-3">
+			<img src="images/sai1.jpg" style="margin:10px" class="img-circle" width="100"height="100"><br>
+			<a class="btn btn-success" href="https://www.facebook.com/Saichand.Vallakatla?fref=ts">Contact Me</a>
+		</div>
+		<div class="col-sm-3">
+			<img src="images/ravi1.jpg" style="margin:10px" class="img-circle" width="100"height="100"><br>
+			<a class="btn btn-success" href="https://www.facebook.com/ravinder.konukati?fref=ts">Contact Me</a>
+		</div>
+		<div class="col-sm-3">
+			<img src="images/umang.jpg" style="margin:10px;" class="img-circle" width="100"height="100"><br>
+			<a class="btn btn-success" href="https://www.facebook.com/umang.brahma">Contact Me</a>
+		</div>
+	</div>
+</div>
+</body>
+</html>
