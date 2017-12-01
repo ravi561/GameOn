@@ -1,0 +1,145 @@
+yum install python-pip
+pip install awscli --upgrade --user
+aws --version (to see the version)
+
+
+
+
+-------------------------------------------------------------------------
+automated installations on Linux, macOS, or Unix, try the bundled installer:http://docs.aws.amazon.com/cli/latest/userguide/awscli-install-bundle.html.
+
+
+
+
+
+
+----------------------------------------------------------------------------------
+ADDING THE AWS CLI EXECUTABLE TO YOUR COMMAND LINE PATH
+---------------------------------------------------------
+After installing with pip, you may need to add the aws executable to your OS's PATH environment variable.
+
+Example AWS CLI install location - Linux with pip (user mode)
+
+~/.local/bin
+If you didn't install in user mode, the executable might be in the bin folder of your Python installation. If you don't know where Python is installed, run which python.
+
+$ which python
+/usr/local/bin/python
+The output may be the path to a symlink, not the actual executable. Run ls -al to see where it points.
+
+$ ls -al /usr/local/bin/python
+~/.local/Python/3.6/bin/python3.6
+To modify your PATH variable (Linux, macOS, or Unix)
+
+Find your shell's profile script in your user folder. If you are not sure which shell you have, run echo $SHELL.
+
+$ ls -a ~
+.  ..  .bash_logout  .bash_profile  .bashrc  Desktop  Documents  Downloads
+Bash – .bash_profile, .profile, or .bash_login.
+Zsh – .zshrc
+Tcsh – .tcshrc, .cshrc or .login.
+Add an export command to profile script.
+
+export PATH=~/.local/bin:$PATH
+This command adds a path, ~/.local/bin in this example, to the current PATH variable.
+
+Load the profile into your current session.
+
+$ source ~/.bash_profile
+
+
+
+-----------------------------------------------------------------------
+
+
+run-instances   : use to run the instance with selected AMI
+syntax : 
+
+aws ec2 run-instances --image-id ami-72b7bf09 --count 1 --instance-type t2.micro --key-name cli-key --security-group-ids sg-75f63005 --subnet-id subnet-38fc9370
+
+
+
+Aws configuaration:
+
+2B0LJD5HF3+Yegli/e8aVQzGEn0DVqnNtS4hVo/U : secret key
+AKIAJGYTHJBWKACCGWPA   : access key
+
+to see the regions  : aws ec2 describe-regions --output table
+to see availability zones : aws ec2 describe-availability-zones --region us-east-1 --output table
+
+
+
+7  aws
+  108  yum install aws cli
+  109  clear
+  110  yum install python-pip
+  111  clear
+  112  pip install awscli
+  113  pip install --upgrade pip
+  114  aws cli
+  115  aws -version
+  116  aws --version
+  117  pip install awscli --upgrade --user
+  118  clear
+  119  aws ec2 describe-instances
+  120  aws configure
+  121  aws ec2 describe-instances
+  122  aws configure
+  123  aws ec2 describe-instances us-east-1e
+  124  aws ec2 describe-instances
+  125  aws ec2 describe-instances --filters
+  126  aws
+  127  aws describe-instances
+  128  aws ec2 describe-instances
+  129  aws ec2 describe-instance-status
+  130  aws configure
+  131  aws ec2 describe-instances
+  132  aws ec2 describe-regions --output table
+  133  aws ec2 describe-availbaility-zones --output table
+  134  aws ec2 describe-availbaility-zones --region us-east-1 --output table
+  135  clear
+  136  aws ec2 describe-availbaility-zones --region us-east-1
+  137  aws ec2 describe-availbility-zones --region us-east-1 --output table
+  138  aws ec2 describe-availability-zones --region us-east-1 --output table
+  139  clear
+  140  aws ec2 run-instances --image-id ami-72b7bf09 --count 1 --instance-type t2.micro --key-name cli-key --security-group-ids sg-75f63005 --subnet-id subnet-38fc9370
+  141  aws ec2 run-instances --image-id ami-72b7bf09 --count 1 --instance-type t2.micro --key-name cli-key --security-group-id sg-9d32abed --subnet-id subnet-38fc9370
+  142  aws ec2 describe-instances --instanceid i-052f2815fe48d39eb
+  143  aws ec2 describe-instances --instance-id i-052f2815fe48d39eb
+  144  aws ec2 describe-instances --instance-id i-052f2815fe48d39eb --output table
+  145  ssh ec2-user@34.224.101.49 -i cli-key.pem
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
